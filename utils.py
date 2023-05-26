@@ -2,8 +2,8 @@ import os
 import cv2
 import torch
 
-CLASS_NAME_TO_ID = {'Bus': 0, 'Truck': 1}
-CLASS_ID_TO_NAME = {0: 'Bus', 1: 'Truck'}
+CLASS_NAME_TO_ID = {'empty': 0, 'occupied': 1}
+CLASS_ID_TO_NAME = {0: 'empty', 1: 'occupied'}
 BOX_COLOR = {'Bus':(200, 0, 0), 'Truck':(0, 0, 200)}
 
 TEXT_COLOR = (255, 255, 255)
