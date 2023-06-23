@@ -2,9 +2,9 @@ import os
 import cv2
 import torch
 
-CLASS_NAME_TO_ID = {'empty': 0, 'occupied': 1}
-CLASS_ID_TO_NAME = {0: 'empty', 1: 'occupied'}
-BOX_COLOR = {'Bus':(200, 0, 0), 'Truck':(0, 0, 200)}
+CLASS_NAME_TO_ID = {'empty': 0.0, 'occupied': 1.0}
+CLASS_ID_TO_NAME = {0.0: 'empty', 1.0: 'occupied'}
+BOX_COLOR = {'empty':(200, 0, 0), 'occupied':(0, 0, 200)}
 
 TEXT_COLOR = (255, 255, 255)
 
@@ -38,7 +38,22 @@ def visualize_bbox(image, bbox, class_name, color=BOX_COLOR, thickness=2):
 
 def visualize(image, bboxes, category_ids):
     img = image.copy()
-    for bbox, category_id in zip(bboxes, category_ids):
-        class_name = CLASS_ID_TO_NAME[category_id]
-        img = visualize_bbox(img, bbox, class_name)
+    for i in range(len(category_ids)):
+        class_name = CLASS_ID_TO_NAME[category_ids[i][0]]
+        img = visualize_bbox(img, bboxes[0][i], class_name)
+    return img
+
+def visualizes(image, bboxes, category_ids):
+    img = image.copy()
+    for i in range(len(category_ids)):
+        class_name = CLASS_ID_TO_NAME[category_ids[i]]
+        img = visualize_bbox(img, bboxes[0][i], class_name)
+    return img
+
+
+def visualized(image, bboxes, category_ids):
+    img = image.copy()
+    for i in range(len(category_ids)):
+        class_name = CLASS_ID_TO_NAME[category_ids[i]]
+        img = visualize_bbox(img, bboxes[i], class_name)
     return img
