@@ -85,3 +85,9 @@
 
 
 ### RCNN
+- tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
+- 전체 이미지(12162개) 이미지 모두사용
+
+#### 참고 자료
+- https://hyungjobyun.github.io/machinelearning/FasterRCNN2/
+- https://youtu.be/jqNCdjOB15s
