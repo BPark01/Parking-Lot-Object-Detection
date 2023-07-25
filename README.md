@@ -29,11 +29,6 @@
 ![image](https://github.com/pabihe0223/Parking-Lot-Object-Detection/assets/106232513/663d7c00-78d0-4896-a759-d269312fd387)
 
 
-## 모델  
-- VGG16 : tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
-- RCNN :
-
-
 ## 데이터 전처리
 
 ### xml을 csv로 변환 
@@ -73,3 +68,15 @@
 
 - 세 개의 주차장별로 나뉘었던 폴더와 하위 폴더들을 하나의 폴더로 통합
 - 데이터 증식 객체를 통해 이미지의 개수를 늘렸기 때문에 모든 이미지를 사용하지 않고 일부만 랜덤으로 선택
+
+
+## 모델  
+- VGG16 : tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
+- RCNN :
+
+
+## VGG16
+
+### 참고 자료
+[vgg16](https://github.com/gsadhas/real-time-parking-occupancy-detection/blob/688ea3a5756b329de7ceefb90b163e02f607ca89/cnn_models_vgg16.ipynb)
+[RCNN]
