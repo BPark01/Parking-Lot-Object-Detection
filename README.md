@@ -85,7 +85,7 @@
 
 
 ### RCNN
-- tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
+- torchvisions 모듈 안에 있는 RCNN 모델 사용
 - 전체 이미지(12162개) 이미지 모두사용
 
 #### 참고 자료
