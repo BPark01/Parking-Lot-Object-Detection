@@ -76,8 +76,12 @@
 ## 모델  
 
 ### VGG16
-tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
+- tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
+- 전체 이미지 중 1800개 학습 450개 검증
+- [vgg16 source code](https://github.com/pabihe0223/Parking-Lot-Object-Detection/blob/2903f7f9681dc9200b2889c49148d878b681837d/vgg16_parking_lot.ipynb)
 
 #### 참고 자료
 [vgg16](https://github.com/gsadhas/real-time-parking-occupancy-detection/blob/688ea3a5756b329de7ceefb90b163e02f607ca89/cnn_models_vgg16.ipynb)
-[RCNN]
+
+
+### RCNN
