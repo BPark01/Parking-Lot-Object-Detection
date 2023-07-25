@@ -36,6 +36,9 @@
 
 ### csv 파일 데이터 전처리 진행
 
+[DataPreProcessingMean](https://github.com/pabihe0223/Parking-Lot-Object-Detection/blob/46dd3c27a253cec57de0d18f748042b678fd1846/DataPreprocessingMean.ipynb)
+
+
     PK_data = pd.read_csv('all_data.csv')
 
 ![image](https://github.com/pabihe0223/Parking-Lot-Object-Detection/assets/106232513/de0d0847-ce0c-4e8c-8254-ea43188bb2cf)
@@ -71,12 +74,10 @@
 
 
 ## 모델  
-- VGG16 : tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
-- RCNN :
 
+### VGG16
+tensorflowdml keras 모듈 안에 있는 VGG16 모델 사용
 
-## VGG16
-
-### 참고 자료
+#### 참고 자료
 [vgg16](https://github.com/gsadhas/real-time-parking-occupancy-detection/blob/688ea3a5756b329de7ceefb90b163e02f607ca89/cnn_models_vgg16.ipynb)
 [RCNN]
