@@ -36,13 +36,13 @@
 
 ## 데이터 전처리
 
-- xml 수정해서 csv로 변환 후 데이터 전처리 진행
-- 세 개의 주차장별로 나뉘었던 폴더와 하위 폴더들을 하나의 폴더로 통합
-- 데이터 증식 객체를 통해 이미지의 개수를 늘렸기 때문에 모든 이미지를 사용하지 않고 일부만 랜덤으로 선택
+### xml을 csv로 변환 
+[xml_parsing](https://github.com/pabihe0223/Parking-Lot-Object-Detection/blob/d3127da588dfa47e65fe6ddf87b0877d7731f931/xml_parsing.ipynb)
+
+### csv 파일 데이터 전처리 진행
 
     PK_data = pd.read_csv('all_data.csv')
 
-[PK_data]
 ![image](https://github.com/pabihe0223/Parking-Lot-Object-Detection/assets/106232513/de0d0847-ce0c-4e8c-8254-ea43188bb2cf)
 
     #PK_data에서 occupied column의 NULL값이 있는 데이터프레임 생성
@@ -70,3 +70,6 @@
     final_PK_data['occupied']=final_PK_data['occupied'].fillna(0)
 
 ![image](https://github.com/pabihe0223/Parking-Lot-Object-Detection/assets/106232513/25a210b2-6382-4e53-b56e-37e0dc4eef38)
+
+- 세 개의 주차장별로 나뉘었던 폴더와 하위 폴더들을 하나의 폴더로 통합
+- 데이터 증식 객체를 통해 이미지의 개수를 늘렸기 때문에 모든 이미지를 사용하지 않고 일부만 랜덤으로 선택
